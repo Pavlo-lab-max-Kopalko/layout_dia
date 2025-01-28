@@ -13,15 +13,20 @@
 
   @include onDeskTop {
     gap: 20px;
+    max-width: 558px;
   }
 
   &__column-1 {
+    gap: 24px;
+
     @include onDeskTop {
       margin-top: 132px;
     }
   }
 
   &__column-2 {
+    gap: 24px;
+
     @include onTablet {
       position: relative;
       top: -132px;
