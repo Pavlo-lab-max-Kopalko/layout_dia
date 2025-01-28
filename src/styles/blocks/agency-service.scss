@@ -13,11 +13,19 @@
 
   &__options {
     // position: relative;
-    // margin-bottom: 24px;
+    margin-bottom: 24px;
     background-color: $main-background-color;
     border-radius: 24px;
     font-weight: 600;
-    margin-bottom: 20px;
+
+    @include onTablet {
+      margin-bottom: 30px;
+    }
+
+    @include onDeskTop {
+      margin-bottom: 20px;
+    }
+
     height: 264px;
   }
 

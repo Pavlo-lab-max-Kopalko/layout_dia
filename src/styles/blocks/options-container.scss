@@ -1,6 +1,10 @@
 .options-container {
   display: grid;
-  grid-gap: 30px;
+
+  @include onTablet {
+    grid-gap: 30px;
+  }
+
 
   @include onTablet {
     display: grid;
@@ -18,8 +22,10 @@
   }
 
   &__column-2 {
-    position: relative;
-    top: -132px;
+    @include onTablet {
+      position: relative;
+      top: -132px;
+    }
 
     @include onDeskTop {
       position: static;
