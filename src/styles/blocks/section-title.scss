@@ -1,0 +1,33 @@
+.section-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: $main-title-color;
+  font-family: Poppins;
+  padding-bottom: 24px;
+
+  @include onTablet {
+    padding-bottom: 16px;
+  }
+
+  &--align--left {
+    text-align: left;
+  }
+
+  &-little {
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19.5px;
+    color: #c0cdd7;
+    padding-bottom: 16px;
+  }
+
+  &__higher {
+    @include onDeskTop {
+      padding-bottom: 64px;
+    }
+  }
+}

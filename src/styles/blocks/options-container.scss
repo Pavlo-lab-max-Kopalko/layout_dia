@@ -1,0 +1,28 @@
+.options-container {
+  display: grid;
+  grid-gap: 30px;
+
+  @include onTablet {
+    display: grid;
+    grid-template-columns: repeat(2, 8fr);
+  }
+
+  @include onDeskTop {
+    gap: 20px;
+  }
+
+  &__column-1 {
+    @include onDeskTop {
+      margin-top: 132px;
+    }
+  }
+
+  &__column-2 {
+    position: relative;
+    top: -132px;
+
+    @include onDeskTop {
+      position: static;
+    }
+  }
+}

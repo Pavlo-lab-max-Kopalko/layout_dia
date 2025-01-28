@@ -1,0 +1,24 @@
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.icon--menu {
+  background-image: url(../images/menu.png);
+
+  @include onDeskTop {
+    display: none;
+  }
+}
+
+.icon--close {
+  background-image: url(../images/icon-close-black.png);
+}

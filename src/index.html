@@ -1,13 +1,292 @@
+<!-- #region head -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dia</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <!-- <link rel="stylesheet" href="./styles/main.scss"> -->
+    <link rel="stylesheet" href="./styles/style.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
   </head>
-  <body>
-    <h1>Dia</h1>
+  <!-- #endregion -->
+
+  <body class="page__body">
+    <header class="header">
+      <div class="top-bar">
+
+        <div class="header__references">
+          <a href="#" class="top-bar__logo">
+            <img src="/images/logo/air.png" alt="Dia Logo">
+          </a>
+          <a href="#burger-menu" class="icon icon--menu"></a>
+        </div>
+
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#who-we-are">About us</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#service-agency">Services</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#service-agency">Testimonials</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#experience">Contact Us</a>
+          </li>
+        </ul>
+
+        <a class="header__link" href="#hire-us">Hire us</a>
+      </div>
+
+      <div class="header__content">
+        <div class="header__center">
+          <h1 class="header__title">Strategic <br> Agency</h1>
+          <h2 class="header__text">We believe in the power of bold ideas that <br>
+            can solve business challenges.
+          </h2>
+          <button class="header__button">Learn more</button>
+        </div>
+
+        <div class="header__background">
+
+          <div class="header__elements">
+            <div class="header__sides">
+              <a href="#" class="header__left header__arrow-button">
+                <img src="/images/arrow__left.png" alt="left-arrow">
+              </a>
+              <a href="#" class="header__right header__arrow-button">
+                <img src="/images/arrow_right.png" alt="right-arrow">
+              </a>
+            </div>
+
+            <div class="header__background-elements">
+              <div class="header__intro">Intro</div>
+              <div class="header__describe">By the same illusion which lifts the horizon.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </header>
     <script type="text/javascript" src="scripts/main.js"></script>
+
+    <aside class="page__menu menu" id="burger-menu">
+      <div class="menu__content">
+        <div class="top-bar menu_top">
+          <a href="#" class="top-bar__logo">
+            <img src="/images/logo/air.png" alt="Logo">
+          </a>
+
+          <a href="#" class=" icon icon--close"></a>
+        </div>
+
+        <nav class="nav menu__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#home">About us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#who-we-are">Services</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#service-agency">Testimonials</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#experience">Contact Us</a>
+            </li>
+          </ul>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#hire-us">Hire us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="who-we-are section-content" id="who-we-are">
+        <h2 class="section-title who-we-are__title">Who we are</h2>
+
+        <div class="who-we-are__content">
+          We embrace a strategic approach to creative ideas. We are interested in people and human relationships. This is the main thing you need to know about us. We believe in the power of bold ideas that can solve business challenges.
+        </div>
+      </section>
+
+      <section class="experience section-white" id="experience">
+        <h2 class="section-title section-title__higher">Our expertise</h2>
+
+        <div class="experience__services">
+          <article class="services">
+            <img
+              src="./images/features/image_1.png"
+              alt="branding"
+              class="services__photo"
+            >
+
+            <h3 class="services__title">Branding</h3>
+            <p class="services__categories">We create additional value for companies, products, services as well as verbal and visual ways to deliver it to the audience.</p>
+          </article>
+
+          <article class="services">
+            <img
+              src="./images/features/image_2.png"
+              alt="communication"
+              class="services__photo"
+            >
+
+            <h3 class="services__title">Communication</h3>
+            <p class="services__categories">We strive to create communications that can increase media performance. We use everything — words, meanings, stories, art, movies.</p>
+          </article>
+
+          <article class="services">
+            <img
+              src="./images/features/image_3.png"
+              alt="strategy"
+              class="services__photo"
+            >
+
+            <h3 class="services__title">Strategy</h3>
+            <p class="services__categories">We create business growth strategies, from the moment of its birth to the achievement of the necessary business indicators.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="agency-service" id="service-agency">
+
+        <div class="services--wraper">
+          <h3 class="section-title-little">Services</h3>
+          <h2 class="section-title section-title--align--left">Air is a full <br> service creative <br> agency</h2>
+
+          <div class="services__text">
+            <p class="services__paragraf">
+              Deep analytics, strong strategy and bright <br> creative ideas.
+            </p>
+
+            <p class="services__paragraf">
+              We are sure that first-rate job is <br> possible only if all three components are united.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="options-container">
+          <div class="options-container__column-1">
+            <div class="agency-service__options options--1">
+              <div class="agency-service__number number--color-1">001</div>
+              <div class="agency-service__info">Brand Development <br>
+                Copywriting <br>
+                Logo & Webite Design <br>
+                Packaging <br>
+              </div>
+
+              <div class="agency-service__button">
+                <img
+                  src="../src/images/blue-arrow.png"
+                  alt="deteils"
+                  class="agency-service__to-pass"
+                >
+
+                <div class="agency-service__learn-more">
+                  Learn more
+                </div>
+              </div>
+            </div>
+
+            <div class="agency-service__options options--2">
+              <div class="agency-service__number number--color-2">002</div>
+              <div class="agency-service__info">Сontent Production <br>
+                Graphic Design <br>
+                Video Production <br>
+                Post Production <br>
+              </div>
+
+              <div class="agency-service__button">
+                <img
+                  src="../src/images/yellow-arrow.png"
+                  alt="deteils"
+                  class="agency-service__to-pass"
+                >
+
+                <div class="agency-service__learn-more">
+                  Learn more
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="options-container__column-2">
+            <div class="agency-service__options options--3">
+              <div class="agency-service__number number--color-3">003</div>
+              <div class="agency-service__info">Marketing Strategy <br>
+                Email Marketing <br>
+                Paid Advertising <br>
+                Blog Content & SEO <br>
+              </div>
+
+              <div class="agency-service__button">
+                <img
+                  src="../src/images/green-arrow.png"
+                  alt="deteils"
+                  class="agency-service__to-pass"
+                >
+
+                <div class="agency-service__learn-more">
+                  Learn more
+                </div>
+              </div>
+            </div>
+
+            <div class="agency-service__options options--4">
+              <div class="agency-service__number number--color-4">004</div>
+              <div class="agency-service__info">Digital Communications <br>
+                Influencer Marketing <br>
+                Product Placements <br>
+                Strategic Partnerships <br>
+              </div>
+
+              <div class="agency-service__button">
+                <img
+                  src="../src/images/red-arrow.png"
+                  alt="deteils"
+                  class="agency-service__to-pass"
+                >
+
+                <div class="agency-service__learn-more">
+                  Learn more
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="results" id="results">
+        <h2 class="section-title">What people say</h2>
+      </section>
+
+      <!-- <section class="results" id="results">
+        <h2 class="section-title">Vision, Passion, Results</h2>
+      </section> -->
+
+      <section class="contacts-us" id="contact-us">
+        <h2 class="section-title">Send us a message</h2>
+      </section>
+
+    </main>
+
   </body>
 </html>

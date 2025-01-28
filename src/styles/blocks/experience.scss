@@ -1,0 +1,22 @@
+.experience {
+  padding-block: 72px;
+
+  @include onTablet {
+   padding-block: 128px;
+  }
+
+  @include onDeskTop {
+    padding-block-end: 134px;
+  }
+
+  &__services {
+    padding-inline: 54px;
+    display: grid;
+    row-gap: 56px;
+
+    @include onDeskTop {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 137px;
+    }
+  }
+}

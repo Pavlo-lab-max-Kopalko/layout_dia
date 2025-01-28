@@ -4,3 +4,42 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin onTablet {
+  @media (min-width: $tablet-min-width) {
+    @content;
+  }
+}
+
+@mixin onDeskTop {
+  @media (min-width: $desktop-min-width) {
+    @content;
+  }
+}
+
+@mixin contentPaddingInline() {
+  padding-inline: 20px 20px;
+  // padding-bottom: 48px;
+
+  @include onTablet {
+    padding-inline: 41px 41px;
+    // padding-bottom: 56px;
+  }
+
+  @include onDeskTop() {
+    padding-inline: 54px;
+  }
+}
+
+
+@mixin contentPaddingBottom() {
+  padding-bottom: 48px;
+
+  @include onTablet {
+    padding-bottom: 56px;
+  }
+
+  @include onDeskTop() {
+    padding-inline: 192px;
+  }
+}

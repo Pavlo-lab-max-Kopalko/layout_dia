@@ -1,0 +1,67 @@
+.agency-service {
+  background-color: $second-main-color;
+  padding-block: 120px;
+
+  @include onDeskTop {
+    display: grid;
+    grid-template-columns: repeat(2, 8fr);
+    // gap: 30px;
+  }
+
+
+  @include contentPaddingInline;
+
+  &__options {
+    // position: relative;
+    // margin-bottom: 24px;
+    background-color: $main-background-color;
+    border-radius: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    height: 264px;
+  }
+
+  &__number {
+    font-family: Popins;
+    font-size: 13px;
+    line-height: 19.5px;
+
+    display: inline-block;
+    border-radius: 23px;
+    margin-left: 32px;
+    margin-top: 32px;
+    padding-block: 2px;
+    padding-inline: 12px;
+    background-color: $second-main-color;
+  }
+
+  &__info {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    line-height: 19.5px;
+
+    margin-left: 32px;
+    margin-top: 24px;
+    color: $main-text-color;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    margin-top: 32px;
+  }
+
+  &__learn-more {
+    font-family: Poppins;
+    font-size: 13px;
+    line-height: 22.5px;
+
+    margin-left: 16px;
+  }
+
+  &__to-pass {
+    height: 40px;
+    width: 40px;
+  }
+}

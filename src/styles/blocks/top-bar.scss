@@ -1,0 +1,28 @@
+.top-bar {
+  padding-top: 18px;
+
+  @include contentPaddingInline;
+  @include contentPaddingBottom;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include onTablet {
+    padding-inline: 41px;
+    padding-bottom: 56px;
+  }
+
+  @include onDeskTop {
+    padding-inline: 54px;
+  }
+
+  &__logo {
+    display: flex;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
