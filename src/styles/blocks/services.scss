@@ -9,41 +9,6 @@
     display: flex;
   }
 
-  &__photo {
-    display: block;
-    margin: auto;
-    border-radius: 16px;
-    // margin-inline: 20px;
-  }
-
-  &__title {
-    margin-bottom: 16px;
-    margin-top: 40px;
-    font-family: inherit;
-    text-align: center;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
-    color: #253757;
-  }
-
-  &__categories {
-    @include onTablet {
-      margin-inline: 98px;
-    }
-
-    @include onDeskTop {
-      margin-inline: 0;
-    }
-
-    font-family: inherit;
-    text-align: center;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
-    color: #6c788b;
-  }
-
   &__text {
     display: flex;
     gap: 20px;
@@ -57,12 +22,13 @@
   }
 
   &--wraper {
-    padding-top: 131px;
+    max-width: 296px;
     @include onTablet {
       width: 266px;
     }
 
     @include onDeskTop {
+      padding-top: 131px;
       width: 100%;
     }
   }

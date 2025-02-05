@@ -11,6 +11,8 @@
     padding-bottom: 16px;
   }
 
+  @include contentPaddingBottom;
+
   &--align--left {
     text-align: left;
   }

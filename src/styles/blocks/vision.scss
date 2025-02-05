@@ -1,0 +1,28 @@
+.vision {
+  height: 571px;
+  background-image: url(/images/Shapes.png);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: none;
+  column-gap: 24px;
+
+  &__wraper {
+    grid-column: 1/3;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    grid-column: span 2;
+  }
+
+  &__describe {
+    grid-column: span 2;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+    padding-inline: 20px;
+  }
+}

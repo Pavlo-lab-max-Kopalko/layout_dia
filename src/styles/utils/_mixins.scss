@@ -39,7 +39,7 @@
     padding-bottom: 56px;
   }
 
-  @include onDeskTop() {
-    padding-inline: 192px;
-  }
+  // @include onDeskTop() {
+  //   padding-bottom: 192px;
+  // }
 }

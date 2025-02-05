@@ -1,27 +1,58 @@
 .agency-service {
   background-color: $second-main-color;
   padding-block: 120px;
+  @include contentPaddingInline;
 
   @include onDeskTop {
     display: grid;
-    grid-template-columns: repeat(2, 8fr);
+    grid-template-columns: repeat(12, 1fr);
     // gap: 24px;
 
     justify-content: space-between;
-    width: 100%;
+    gap: 20px;
+    // width: 100%;
   }
 
+  &__wraper {
+    grid-column: 1/5;
+  }
 
-  @include contentPaddingInline;
+  &__options-container {
+    display: grid;
+
+    @include onDeskTop {
+      grid-column: 8/13;
+    }
+
+    @include onTablet {
+      grid-gap: 30px;
+    }
+
+
+    @include onTablet {
+      display: grid;
+      grid-template-columns: repeat(2, 8fr);
+    }
+
+    @include onDeskTop {
+      gap: 20px;
+      max-width: 558px;
+      justify-self: end;
+    }
+  }
 
   &__options {
-    // margin-bottom: 24px; !!!
+    transition: $effectDuration;
+
     background-color: $main-background-color;
     border-radius: 24px;
     font-weight: 600;
+    margin-bottom: 24px;
 
     @include onDeskTop {
-      max-width: 264px;
+      min-width: 264px;
+      // mib-width: 264px;
+      margin-bottom: 0;
     }
 
     @include onTablet {
@@ -77,5 +108,41 @@
   &__to-pass {
     height: 40px;
     width: 40px;
+  }
+
+  &__options-container--column {
+    transition: $effectDuration;
+
+    & :hover {
+      transform: scale(1.2);
+      transition-duration: $effectDuration;
+      transition: $effectDuration;
+    }
+
+    > * :hover {
+      transform: none;
+    }
+  }
+
+  &__column-1 {
+    gap: 24px;
+
+    @include onDeskTop {
+      margin-top: 132px;
+    }
+  }
+
+  &__column-2 {
+    gap: 24px;
+
+    @include onTablet {
+      position: relative;
+      top: -132px;
+    }
+
+    @include onDeskTop {
+      // transform: trasnlateY(150%);
+      position: static;
+    }
   }
 }

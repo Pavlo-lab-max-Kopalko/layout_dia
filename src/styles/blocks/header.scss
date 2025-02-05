@@ -2,6 +2,7 @@
   // display: none !important;
   box-sizing: border-box;
   height: 100vh;
+  // background-color: #000;
   background-color: #008aff;
 
   display: flex;
@@ -300,39 +301,5 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-  }
-}
-
-
-.who-we-are {
-  background-color: #f2f6fa;
-  padding-block: 120px;
-
-  @include onTablet {
-    padding-block: 128px;
-  }
-
-  @include onDeskTop {
-    padding-block: 148px;
-  }
-
-  // @include contentPaddingInline;
-
-  &__content {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 33px;
-    color: #6c788b;
-
-    display: grid;
-    grid-template-columns: minmax(100%, 25%) 2fr;
-
-    // padding-inline: 20px;
-    text-align: center;
-
-    // @include onTablet {
-    //   padding-inline: 41px;
-    // }
   }
 }
