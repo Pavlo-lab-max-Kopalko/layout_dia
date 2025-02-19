@@ -1,28 +1,87 @@
 .vision {
+  --vision-column: 2;
   height: 571px;
-  background-image: url(/images/Shapes.png);
+  background-color: #fff;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(var(--vision-column), 1fr);
+  @include contentPaddingInline;
+  grid-auto-rows: min-content;
+
+  @include onTablet {
+    background-image: url(/images/Shapes.png);
+    --vision-column: 6;
+    height: 740px;
+  }
+
+  @include onDeskTop {
+    --vision-column: 12;
+  }
+
   grid-template-rows: none;
   column-gap: 24px;
 
-  &__wraper {
-    grid-column: 1/3;
-  }
-
   &__title {
+    margin-top: 72px;
+    @include onTablet {
+      margin-top: 200px;
+    }
+    height: min-content;
+    display: grid;
     margin-bottom: 24px;
     grid-column: span 2;
+
+    @include onTablet {
+      grid-column: 3/-3;
+    }
   }
+
+  // &__wraper {
+  //   grid-column: 1/3;
+  //   padding-bottom: 72px;
+
+  //   @include onTablet {
+  //     padding-block: 200px;
+  //     grid-column: 1/-1;
+  //   }
+  // }
+
 
   &__describe {
     grid-column: span 2;
+
+    @include onTablet {
+      grid-column: 1/-1;
+    }
+
     font-family: 'Open Sans';
     font-size: 22px;
     line-height: 33px;
     font-weight: 600;
     text-align: center;
     margin: auto;
-    padding-inline: 20px;
+    color: #6c788b;
+  }
+
+  &__button {
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #2060f6;
+    margin-top: 56px;
+    grid-column: 1/3;
+
+    @include onTablet {
+      margin-top: 64px;
+      // width: 264px;
+      grid-column: 2/-2;
+    }
+
+    @include onDeskTop {
+      grid-column: 5/-5;
+      width: auto;
+    }
+
+    border: 1px solid transparent;;
   }
 }

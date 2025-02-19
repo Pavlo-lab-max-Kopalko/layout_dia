@@ -3,6 +3,12 @@
   padding-block: 120px;
   @include contentPaddingInline;
 
+  @include onTablet {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 30px;
+  }
+
   @include onDeskTop {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -10,39 +16,51 @@
 
     justify-content: space-between;
     gap: 20px;
+    padding-top: 250px;
     // width: 100%;
   }
 
   &__wraper {
     grid-column: 1/5;
+
+    @include onTablet {
+      grid-column: 1/4;
+    }
+
+    @include onDeskTop {
+      grid-column: 1/5;
+      // grid-row: 1;
+    }
   }
 
   &__options-container {
     display: grid;
 
-    @include onDeskTop {
-      grid-column: 8/13;
-    }
-
     @include onTablet {
       grid-gap: 30px;
-    }
-
-
-    @include onTablet {
+      grid-column: 1/-1;
       display: grid;
       grid-template-columns: repeat(2, 8fr);
     }
 
     @include onDeskTop {
+      grid-column: 7/13;
+      // grid-row: 1;
       gap: 20px;
       max-width: 558px;
-      justify-self: end;
+      // justify-self: end;
     }
   }
 
   &__options {
     transition: $effectDuration;
+    // transition: $effectDuration;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: $effectDuration;
+    }
+
 
     background-color: $main-background-color;
     border-radius: 24px;
@@ -50,7 +68,7 @@
     margin-bottom: 24px;
 
     @include onDeskTop {
-      min-width: 264px;
+      min-width: 214px;
       // mib-width: 264px;
       margin-bottom: 0;
     }
@@ -110,25 +128,12 @@
     width: 40px;
   }
 
-  &__options-container--column {
-    transition: $effectDuration;
-
-    & :hover {
-      transform: scale(1.2);
-      transition-duration: $effectDuration;
-      transition: $effectDuration;
-    }
-
-    > * :hover {
-      transform: none;
-    }
-  }
 
   &__column-1 {
     gap: 24px;
 
     @include onDeskTop {
-      margin-top: 132px;
+      // transform: translateY(132px);
     }
   }
 
@@ -143,6 +148,8 @@
     @include onDeskTop {
       // transform: trasnlateY(150%);
       position: static;
+      transform: translateY(-102px);
+
     }
   }
 }
