@@ -85,12 +85,12 @@
     //   background-size: contain;
     // }
 
-    // @include onDeskTop {
-    //   background-size: cover;
-    // }
+    @include onDeskTop {
+      background-size: cover;
+    }
 
-    // background-repeat: no-repeat;
-    // position: static;
+    background-repeat: no-repeat;
+    position: static;
 
     flex-direction: column;
     justify-content: end;
@@ -114,40 +114,34 @@
 
 
     &-0 {
+      width: 687px;
       background-image: url(/images/background-photo.png);
     }
 
     &-1 {
+      width: 687px;
       background-image: url(/images/slider-photo1.png);
     }
 
     &-2 {
+      width: 687px;
       background-image: url(/images/slider-photo2.png);
     }
   }
 
-  .swiper-wrapper {
-    width: fit-content;;
+  .swiper-slide {
+    width: 100% !important;
   }
 
+
   &__swiper {
-    width: 100%;
+    width: 100vh;
     height: 100vh;
     overflow: hidden;
 
-    @include onTablet {
-      width: 100%;
-      height: 100%;
-    }
-
-    @include onDeskTop {
-      max-width: 687px;
-      min-width: 502px;
-    }
-
     margin-right: 0 !important;
     margin-left: 0 !important;
-    // overflow: hidden !important;
+    overflow: hidden !important;
   }
 
   &__arrow-button {
