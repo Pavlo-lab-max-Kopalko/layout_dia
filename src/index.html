@@ -58,20 +58,20 @@
           <button class="header__button">Learn more</button>
         </div>
 
-        <div class="swiper">
+        <div class="swiper header__swiper">
           <div class="swiper-wrapper">
-            <div class="header__background swiper-slide">
+            <div class="header__background header__background-0 swiper-slide">
 
               <div class="header__elements">
                 <div class="header__sides">
-                  <div href="#" class="header__left header__arrow-button swiper-button-prev">
+                  <div href="#" class="header__left header__arrow-button custom-prev-button">
                     <img
                       src="/images/arrow__left.png"
                       alt="left-arrow"
                       class="header__left-vector"
                     >
                   </div>
-                  <div href="#" class="header__right header__arrow-button swiper-button-next">
+                  <div href="#" class="header__right header__arrow-button custom-next-button">
                     <img
                       src="/images/arrow_right.png"
                       alt="right-arrow"
@@ -88,8 +88,58 @@
               </div>
             </div>
 
-            <div class="header__background-1 swiper-slide"></div>
-            <div class="header__background-2 swiper-slide"></div>
+            <div class="header__background header__background-1 swiper-slide">
+              <div class="header__elements">
+                <div class="header__sides">
+                  <div href="#" class="header__left header__arrow-button custom-prev-button">
+                    <img
+                      src="/images/arrow__left.png"
+                      alt="left-arrow"
+                      class="header__left-vector"
+                    >
+                  </div>
+                  <div href="#" class="header__right header__arrow-button custom-next-button">
+                    <img
+                      src="/images/arrow_right.png"
+                      alt="right-arrow"
+                      class="header__right-vector"
+                    >
+                  </div>
+                </div>
+
+                <div class="header__background-elements">
+                  <div class="header__intro">Intro</div>
+                  <div class="header__describe">By the same illusion which lifts the horizon.</div>
+                </div>
+
+              </div>
+            </div>
+            <div class="header__background header__background-2 swiper-slide">
+              <div class="header__elements">
+                <div class="header__sides">
+                  <div href="#" class="header__left header__arrow-button custom-prev-button">
+                    <img
+                      src="/images/arrow__left.png"
+                      alt="left-arrow"
+                      class="header__left-vector"
+                    >
+                  </div>
+                  <div href="#" class="header__right header__arrow-button custom-next-button">
+                    <img
+                      src="/images/arrow_right.png"
+                      alt="right-arrow"
+                      class="header__right-vector"
+                    >
+                  </div>
+                </div>
+
+                <div class="header__background-elements">
+                  <div class="header__intro">Intro</div>
+                  <div class="header__describe">By the same illusion which lifts the horizon.</div>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -97,6 +147,21 @@
     </header>
     <script type="text/javascript" src="scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Swiper settings
+        loop: true, // Infinite loop
+        navigation: {
+          nextEl: '.custom-next-button', // Next button
+          prevEl: '.custom-prev-button', // Previous button
+        },
+        pagination: {
+          el: '.swiper-pagination', // Pagination
+          clickable: true, // Make pagination clickable
+        },
+      });
+    </script>
 
     <aside class="page__menu menu" id="burger-menu">
       <div class="menu__content">
