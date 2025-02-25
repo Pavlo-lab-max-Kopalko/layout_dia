@@ -1,26 +1,13 @@
 'use strict';
 
-const arrowLeft = document.getElementsByClassName('header__left')[0];
-const arrowRight = document.getElementsByClassName('header__right')[0];
-const headerBackgraund
-  = document.getElementsByClassName('header__background')[0];
+// import { Swiper, SwiperSlide } from 'swiper/swiper';
 
-console.log(arrowLeft);
-console.log(arrowRight);
-console.log(headerBackgraund);
+// import 'swiper/swiper.scss';
 
-const photos = [
-  '/images/slider-photo1.png',
-  '/images/slider-photo2.png',
-  '/images/slider-photo3.png',
-  '/images/background-photo.png',
-];
-
-console.log(headerBackgraund.style.backgroundImage);
-
-let index = 0;
-
-arrowRight.addEventListener('click', () => {
-  index += 1;
-  headerBackgraund.style.backgroundImage = `url${photos[index]}`;
+const swiper = new Swiper('.swiper', {
+  // ... інші налаштування Swiper ...
+  navigation: {
+    nextEl: '.header_right.header_arrow-button',
+    prevEl: '.header_left.header_arrow-button',
+  },
 });

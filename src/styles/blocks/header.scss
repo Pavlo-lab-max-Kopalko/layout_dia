@@ -101,6 +101,14 @@
     }
 
     background-image: url(/images/background-photo.png);
+
+    &-1 {
+      background-image: url(/images/slider-photo1.png);
+    }
+
+    &-2 {
+      background-image: url(/images/slider-photo2.png);
+    }
   }
 
   &__arrow-button {
@@ -278,6 +286,7 @@
 
     @include onDeskTop {
       margin-bottom: 48px;
+      // margin-top: 514px;
     }
 
     flex-direction: column;
