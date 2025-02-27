@@ -43,23 +43,23 @@
 
     position: relative;
 
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: -8px;
-      display: block;
-      height: 2px;
-      border-radius: 4px;
-      width: 100%;
-      background-color: #ff9c8e;
-      transition: transform 0.3s;
-      transform: scale(0);
-      transform-origin: left;
-    }
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   bottom: -8px;
+    //   display: block;
+    //   height: 2px;
+    //   border-radius: 4px;
+    //   width: 100%;
+    //   background-color: #ff9c8e;
+    //   transition: transform 0.3s;
+    //   transform: scale(0);
+    //   transform-origin: left;
+    // }
 
-    &:hover::after {
-      transform: scale(1);
-    }
+    // &:hover::after {
+    //   transform: scale(1);
+    // }
   }
 
   &__content {
@@ -152,7 +152,7 @@
       min-width: 500px;
     }
 
-    height: 100vh;
+    height: 100%;
 
     margin-right: 0 !important;
     margin-left: 0 !important;
@@ -307,7 +307,7 @@
     font-weight: 600;
     font-size: 15px;
     line-height: 22.5px;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
 
     box-sizing: border-box;
     display: block;
@@ -315,6 +315,7 @@
 
     @include onTablet {
       width: 264px;
+      margin-bottom: 100px;
     }
 
     padding: 0 48px;
@@ -332,20 +333,19 @@
     z-index: 4;
 
     left: 20px;
-    top: 130px;
+    bottom: 24px;
+
+    @include onTablet {
+      bottom: 32px;
+    }
 
     @include onDeskTop {
       flex-direction: row;
     }
 
     @include onDeskTop {
-      // margin-top: 474px;
-
-      // top: 665px;
       left: 78px;
-
-      top: 451px;
-
+      bottom: 48px;
       z-index: 4;
     }
 

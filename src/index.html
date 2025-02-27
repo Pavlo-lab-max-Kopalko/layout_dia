@@ -108,15 +108,14 @@
 
     <script>
       const swiper = new Swiper('.swiper', {
-        // Swiper settings
-        loop: true, // Infinite loop
+        loop: true,
         navigation: {
-          nextEl: '.custom-next-button', // Next button
-          prevEl: '.custom-prev-button', // Previous button
+          nextEl: '.custom-next-button',
+          prevEl: '.custom-prev-button',
         },
         pagination: {
-          el: '.swiper-pagination', // Pagination
-          clickable: true, // Make pagination clickable
+          el: '.swiper-pagination',
+          clickable: true,
         },
       });
     </script>
@@ -420,31 +419,33 @@
         </div> -->
       </section>
 
-      <section class="contacts-us" id="contact-us">
-        <h2 class="section-title contacts-us__title">Send us a message</h2>
+      <section class="send-message" id="send-message">
+        <h2 class="section-title send-message__title">Send us a message</h2>
 
-        <label for="#" class="contacts-us__label">
+        <for for="#" class="send-message__for">
           <input
             type="email"
             name="email"
-            class="contacts-us__input-email"
+            class="send-message__input-email"
             placeholder="email@exa"
           >
 
           <input
-            type="email"
-            name="email"
-            class="contacts-us__input-email"
-            placeholder="email@exa"
+            type="name"
+            name="name"
+            class="send-message__input-email"
+            placeholder="Your name"
           >
 
           <input
-            type="email"
-            name="email"
-            class="contacts-us__input-email"
-            placeholder="email@exa"
+            type="name"
+            name="name"
+            class="send-message__input-email"
+            placeholder="Your message"
           >
-        </label>
+
+          <button class="send-message__button">Send</button>
+        </for>
       </section>
 
     </main>
