@@ -21,6 +21,16 @@
       width: 362px;
       margin-inline: 41px;
     }
+
+    margin-bottom: 80px;
+
+    @include onTablet {
+      margin-bottom: 120px;
+    }
+
+    // @include onSmallDeskTop {
+    //   height: 243px;
+    // }
   }
 
   &__input-email {
@@ -28,8 +38,13 @@
     height: 41px;
 
     border: none;
+    border-radius: 0;
     border-bottom: 1px solid #fff;
-    block-size: border-box;
+    border-top: 1px solid transparent;
+    // border-left: 1px solid transparent;
+    // border-right: 1px solid transparent;
+    box-sizing: border-box;
+    // padding-block: 1px;
 
     appearance: none;
 
@@ -43,6 +58,11 @@
     &:focus {
       outline: none;
       border-bottom: 2px solid #fff;
+      border-top: 2px solid transparent;
+      // border-left: 2px solid transparent;
+      // border-right: 2px solid transparent;
+      // padding-bottom: 0;
+      // padding-block: 1px;
 
       // &::placeholder {
       //   color: transparent;
@@ -58,12 +78,18 @@
   }
 
   &__button {
-    background-color: #ff9c8e;
     border-radius: 68px;
     border: 1px solid transparent;
     color: #fff;
     width: 100%;
     margin-top: 56px;
+
+    background-color: #ff9c8e;
+    transition-duration: $effectDuration;
+
+    &:hover {
+      background-color: #ff7e6c;
+    }
 
     @include onTablet {
       width: 264px;

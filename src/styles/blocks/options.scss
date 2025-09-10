@@ -1,5 +1,5 @@
 .options--2 {
-  @include onDeskTop {
+  @include onSmallDeskTop {
     margin-bottom: 0;
   }
 }
@@ -7,4 +7,3 @@
 .options--4 {
   margin-bottom: 0 !important;
 }
-

@@ -1,12 +1,14 @@
 .who-we-are {
   background-color: #f2f6fa;
   padding-block: 120px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 
   @include onTablet {
     padding-block: 128px;
   }
 
-  @include onDeskTop {
+  @include onSmallDeskTop {
     padding-block: 148px;
   }
 

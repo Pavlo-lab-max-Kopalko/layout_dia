@@ -12,7 +12,7 @@
     gap: 30px;
   }
 
-  @include onDeskTop {
+  @include onSmallDeskTop {
     --column: 12;
     gap: 20px;
   }
@@ -32,7 +32,7 @@
       grid-column: 1/-1
     }
 
-    @include onDeskTop {
+    @include onSmallDeskTop {
       display: flex;
 
       gap: 20px;
@@ -45,26 +45,26 @@
     margin-bottom: 24px;
 
     &--1 {
-      @include onDeskTop {
+      @include onSmallDeskTop {
         grid-column: 1/5;
       }
     }
 
     &--1 {
-      @include onDeskTop {
+      @include onSmallDeskTop {
         grid-column: 1/5;
         background-color: black;
       }
     }
 
     &--2 {
-      @include onDeskTop {
+      @include onSmallDeskTop {
         grid-column: 5/9;
       }
     }
 
     &--3 {
-      @include onDeskTop {
+      @include onSmallDeskTop {
         grid-column: 10/13;
       }
     }
@@ -133,8 +133,10 @@
   position: relative;
   margin: auto;
   padding-top: 75px;
-  width: 110px; /* Задайте бажану ширину рамки */
-  height: 110px; /* Задайте бажану висоту рамки */
+  width: 110px;
+  /* Задайте бажану ширину рамки */
+  height: 110px;
+  /* Задайте бажану висоту рамки */
 
   @include onTablet {
     width: 140px;
@@ -146,15 +148,18 @@
 .photo-frame::after {
   content: "";
   position: absolute;
-  width: 44px; /* Розмір кута */
-  height: 109px; /* Розмір кута */
+  width: 44px;
+  /* Розмір кута */
+  height: 109px;
+  /* Розмір кута */
 
   @include onTablet {
     width: 56px;
     height: 139px;
   }
 
-  background-color: #007bff; /* Колір кута */
+  background-color: #007bff;
+  /* Колір кута */
   transform: rotate(30deg);
   border-radius: 12px;
 }

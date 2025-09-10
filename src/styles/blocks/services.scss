@@ -1,7 +1,7 @@
 .services {
   @include contentPaddingInline;
 
-  @include onDeskTop {
+  @include onSmallDeskTop {
     padding: 0;
   }
 
@@ -27,11 +27,12 @@
 
   &--wraper {
     max-width: 296px;
+
     @include onTablet {
       width: 266px;
     }
 
-    @include onDeskTop {
+    @include onSmallDeskTop {
       padding-top: 131px;
       width: 100%;
     }

@@ -14,11 +14,11 @@
 .icon--menu {
   background-image: url(../images/menu.png);
 
-  @include onDeskTop {
+  @include onSmallDeskTop {
     display: none;
   }
 }
 
 .icon--close {
-  background-image: url(../images/icon-close-black.png);
+  background-image: url(../images/icon-close-blue.png);
 }

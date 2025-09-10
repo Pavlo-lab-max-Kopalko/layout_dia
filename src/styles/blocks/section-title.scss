@@ -28,7 +28,7 @@
   }
 
   &__higher {
-    @include onDeskTop {
+    @include onSmallDeskTop {
       padding-bottom: 64px;
     }
   }

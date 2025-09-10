@@ -1,7 +1,7 @@
 .section-content {
   @include contentPaddingInline;
 
-  @include onDeskTop {
+  @include onSmallDeskTop {
     padding-inline: 154px;
   }
 

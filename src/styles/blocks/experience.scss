@@ -2,10 +2,10 @@
   padding-block: 72px;
 
   @include onTablet {
-   padding-block: 128px;
+    padding-block: 128px;
   }
 
-  @include onDeskTop {
+  @include onSmallDeskTop {
     padding-block-end: 134px;
   }
 
@@ -14,7 +14,7 @@
     display: grid;
     row-gap: 56px;
 
-    @include onDeskTop {
+    @include onSmallDeskTop {
       grid-template-columns: repeat(3, 1fr);
       column-gap: 137px;
     }
@@ -43,7 +43,7 @@
       margin-inline: 98px;
     }
 
-    @include onDeskTop {
+    @include onSmallDeskTop {
       margin-inline: 0;
     }
 
