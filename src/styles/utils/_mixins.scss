@@ -6,72 +6,66 @@
   }
 }
 
-@mixin onTablet {
+@mixin on-tablet {
   @media (min-width: $tablet-min-width) {
     @content;
   }
 }
 
-@mixin onSmallDeskTop {
+@mixin on-small-desktop {
   @media (min-width: $small-desktop-min-width) {
     @content;
   }
 }
 
-@mixin onDeskTop {
+@mixin on-desktop {
   @media (min-width: $desktop-min-width) {
     @content;
   }
 }
 
-@mixin onTheDesign {
+@mixin on-the-design {
   @media (min-width: $the-design) {
     @content;
   }
 }
 
-@mixin onLargeScreens {
+@mixin on-large-screens {
   @media (min-width: $large-screens) {
     @content;
   }
 }
 
 
-@mixin contentPaddingInline() {
+@mixin content-padding-inline() {
   padding-inline: 20px 20px;
-  // padding-bottom: 48px;
 
-  @include onTablet {
+  @include on-tablet {
     padding-inline: 41px;
-    // padding-bottom: 56px;
   }
 
-  @include onSmallDeskTop() {
+  @include on-small-desktop {
     padding-inline: 54px;
   }
 
-  @include onDeskTop() {
+  @include on-desktop {
     padding-inline: 80px;
   }
 
-  @include onTheDesign() {
+  @include on-the-design {
     padding-inline: 227px;
   }
 
-  @include onLargeScreens() {
+  @include on-large-screens {
     padding-inline: 707px;
   }
 }
 
 
-@mixin contentPaddingBottom() {
+@mixin content-padding-bottom() {
   padding-bottom: 48px;
 
-  @include onTablet {
+  @include on-tablet {
     padding-bottom: 56px;
   }
-
-  // @include onSmallDeskTop() {
-  //   padding-bottom: 192px;
-  // }
 }

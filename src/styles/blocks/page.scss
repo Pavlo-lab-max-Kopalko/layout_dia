@@ -1,14 +1,14 @@
-.page:has(.page__menu:target) {
-  overflow: hidden;
-}
-
 .page {
   scroll-behavior: smooth;
 }
 
+.page:has(.page__menu:target) {
+  overflow: hidden;
+}
+
 .page__body {
   margin: 0;
-  background: #f2f6fa;
+  background: $second-main-color;
 }
 
 .page__menu {
@@ -18,13 +18,11 @@
   right: 0;
 
   opacity: 0;
-  // z-index: 1;
   pointer-events: none;
 
   &:target {
     pointer-events: all;
     opacity: 1;
-    // z-index: 5;
   }
 
   display: flex;

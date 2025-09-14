@@ -1,0 +1,21 @@
+.single-level-section {
+  background-color: $background-color;
+
+  @include on-small-desktop {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+  }
+
+  @include on-desktop {
+    grid-area: 30px;
+  }
+}
+
+.send-message {
+  grid-column: 1/6;
+}
+
+.contact-us {
+  grid-column: 7/12;
+}

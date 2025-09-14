@@ -4,14 +4,14 @@
   line-height: 48px;
   text-align: center;
   color: $main-title-color;
-  font-family: Poppins;
+  font-family: Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding-bottom: 24px;
 
-  @include onTablet {
+  @include on-tablet {
     padding-bottom: 16px;
   }
 
-  @include contentPaddingBottom;
+  @include content-padding-bottom;
 
   &--align--left {
     text-align: left;
@@ -28,7 +28,7 @@
   }
 
   &__higher {
-    @include onSmallDeskTop {
+    @include on-small-desktop {
       padding-bottom: 64px;
     }
   }

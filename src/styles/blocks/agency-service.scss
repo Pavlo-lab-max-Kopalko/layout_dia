@@ -1,64 +1,72 @@
-.agency-service {
+.services {
   background-color: $second-main-color;
   padding-block: 120px;
-  @include contentPaddingInline;
 
-  @include onTablet {
+  @include content-padding-inline;
+
+  @include on-tablet {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     column-gap: 30px;
   }
 
-  @include onSmallDeskTop {
+  @include on-small-desktop {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    // gap: 24px;
 
     justify-content: space-between;
     gap: 20px;
     padding-top: 250px;
-    // width: 100%;
   }
 
   &__wraper {
     grid-column: 1/5;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 1/4;
     }
 
-    @include onSmallDeskTop {
+    @include on-small-desktop {
       grid-column: 1/5;
-      // grid-row: 1;
     }
+  }
+
+  &__title {
+    padding-bottom: 24px;
+  }
+
+  &__paragraf {
+    font-family: "Open sans", sans-serif;
+    font-weight: 400;
+    font-style: 14px;
+    color: $main-text-color;
+    line-height: 150%;
+    letter-spacing: 0;
   }
 
   &__options-container {
     display: grid;
 
-    @include onTablet {
+    @include on-tablet {
       grid-gap: 30px;
       grid-column: 1/-1;
       display: grid;
       grid-template-columns: repeat(2, 8fr);
     }
 
-    @include onSmallDeskTop {
+    @include on-small-desktop {
       grid-column: 7/13;
-      // grid-row: 1;
       gap: 20px;
       max-width: 558px;
-      // justify-self: end;
     }
   }
 
   &__options {
-    transition: $effectDuration;
-    // transition: $effectDuration;
+    transition: $effect-duration;
 
     &:hover {
-      transform: scale(1.2);
-      transition: $effectDuration;
+      transform: scale($hover-size);
+      transition: $effect-duration;
     }
 
 
@@ -67,17 +75,16 @@
     font-weight: 600;
     margin-bottom: 24px;
 
-    @include onSmallDeskTop {
+    @include on-small-desktop {
       min-width: 214px;
-      // mib-width: 264px;
       margin-bottom: 0;
     }
 
-    @include onTablet {
+    @include on-tablet {
       margin-bottom: 30px;
     }
 
-    @include onSmallDeskTop {
+    @include on-small-desktop {
       margin-bottom: 20px;
     }
 
@@ -85,7 +92,8 @@
   }
 
   &__number {
-    font-family: Popins;
+    font-family: Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
     font-size: 13px;
     line-height: 19.5px;
 
@@ -99,7 +107,7 @@
   }
 
   &__info {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 13px;
     line-height: 19.5px;
 
@@ -113,43 +121,43 @@
     align-items: center;
     margin-left: 32px;
     margin-top: 32px;
+    cursor: pointer;
+
+    &__icon {
+      height: 40px;
+      width: 40px;
+      transition: transform $effect-duration;
+    }
+
+    &:hover &__icon {
+      transform: rotate(-180deg);
+      transition: transform $effect-duration;
+    }
   }
 
   &__learn-more {
-    font-family: Poppins;
+    font-family: Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 13px;
     line-height: 22.5px;
 
     margin-left: 16px;
   }
 
-  &__to-pass {
-    height: 40px;
-    width: 40px;
-  }
-
-
   &__column-1 {
     gap: 24px;
-
-    @include onSmallDeskTop {
-      // transform: translateY(132px);
-    }
   }
 
   &__column-2 {
     gap: 24px;
 
-    @include onTablet {
+    @include on-tablet {
       position: relative;
       top: -132px;
     }
 
-    @include onSmallDeskTop {
-      // transform: trasnlateY(150%);
+    @include on-small-desktop {
       position: static;
       transform: translateY(-102px);
-
     }
   }
 }

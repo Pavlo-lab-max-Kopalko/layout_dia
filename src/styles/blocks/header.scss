@@ -1,26 +1,20 @@
 .header {
-  // display: none !important;
   box-sizing: border-box;
   height: 100vh;
-  // background-color: #000;
   background-color: $background-color;
 
   display: flex;
-  // justify-content: space-between;
   flex-direction: column;
   overflow: hidden;
 
-  border-end-start-radius: 30px;
-  border-end-end-radius: 30px;
-
-  @include onSmallDeskTop {
+  @include on-small-desktop {
     border-end-start-radius: 200px;
   }
 
   &__list {
     display: none;
 
-    @include onSmallDeskTop {
+    @include on-small-desktop {
       display: flex;
       flex-direction: row;
     }
@@ -31,44 +25,11 @@
     padding-inline: 48px;
   }
 
-  &__link {
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 19.5px;
-    letter-spacing: 3px;
-
-    text-decoration: none;
-    color: #fff;
-
-    position: relative;
-
-    // &::after {
-    //   content: '';
-    //   position: absolute;
-    //   bottom: -8px;
-    //   display: block;
-    //   height: 2px;
-    //   border-radius: 4px;
-    //   width: 100%;
-    //   background-color: #ff9c8e;
-    //   transition: transform 0.3s;
-    //   transform: scale(0);
-    //   transform-origin: left;
-    // }
-
-    // &:hover::after {
-    //   transform: scale(1);
-    // }
-  }
-
   &__content {
     display: flex;
     flex-direction: column;
 
-    // @include contentPaddingInline;
-
-    @include onSmallDeskTop {
+    @include on-small-desktop {
       justify-content: space-between;
       flex-direction: row;
     }
@@ -87,42 +48,23 @@
     height: 100%;
     padding: 0;
 
-    // border-end-start-radius: 30px;
-
-    // @include onSmallDeskTop {
-    //   border-end-start-radius: 0;
-    // }
-
-
     &-0 {
-      // width: 687px;
       background-position: unset;
       background-image: url(/images/background-photo.png);
     }
 
     &-1 {
-      // width: 687px;
       background-image: url(/images/slider-photo1.png);
 
-
-      @include onTablet {
-        border-radius: 30px;
-      }
-
-      @include onSmallDeskTop {
+      @include on-small-desktop {
         border-start-start-radius: 200px;
       }
     }
 
     &-2 {
-      // width: 687px;
       background-image: url(/images/slider-photo2.png);
 
-      @include onTablet {
-        border-radius: 30px;
-      }
-
-      @include onSmallDeskTop {
+      @include on-small-desktop {
         border-start-start-radius: 200px;
       }
     }
@@ -130,12 +72,7 @@
     &-3 {
       background-image: url(/images/slider-photo3.png);
 
-
-      @include onTablet {
-        border-radius: 30px;
-      }
-
-      @include onSmallDeskTop {
+      @include on-small-desktop {
         border-start-start-radius: 200px;
       }
     }
@@ -145,21 +82,21 @@
     position: relative;
     width: 100vh;
 
-    @include onTablet {
+    @include on-tablet {
       width: auto;
     }
 
-    @include onSmallDeskTop {
+    @include on-small-desktop {
       max-width: 686px;
       min-width: 502px;
     }
 
-    @include onTheDesign {
+    @include on-the-design {
       min-width: 687px;
       max-width: 1166px;
     }
 
-    @include onLargeScreens {
+    @include on-large-screens {
       min-width: 1167px;
     }
 
@@ -173,11 +110,9 @@
   &__arrow-button {
     text-decoration: none;
     font-size: 0;
-    // display: inline-block;
   }
 
   &__left {
-    // font-size: 0;
     margin-right: 16px;
   }
 
@@ -186,17 +121,15 @@
   }
 
   &__sides {
-    // flex-direction: column;
     display: flex;
     align-items: center;
-    // margin-bottom: 108px;
   }
 
   &__intro {
     flex-direction: column;
     padding-top: 16px;
 
-    @include onSmallDeskTop {
+    @include on-small-desktop {
       padding-top: 0;
     }
 
@@ -206,7 +139,7 @@
     font-size: 13px;
     line-height: 19.5px;
     letter-spacing: 3px;
-    font-family: 'Poppins';
+    font-family: Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   &__describe {
@@ -215,28 +148,25 @@
     margin-bottom: 24px;
     margin-top: 8px;
 
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 19.6px;
 
-    @include onTablet {
+    @include on-tablet {
       margin-bottom: 32px;
     }
 
-    @include onSmallDeskTop {
-      margin-bottom: 0px;
+    @include on-small-desktop {
+      margin-bottom: 0;
     }
   }
 
   &__top {
     box-sizing: border-box;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
     padding: 20px 20px 48px;
   }
 
@@ -247,24 +177,20 @@
   }
 
   &__link {
-    text-decoration: none;
-    color: #fff;
     padding-bottom: 0;
 
     text-transform: uppercase;
     text-decoration: none;
 
-    // padding-bottom: 8px;
-    // border-bottom: 2px solid #ff9c8e;
     width: fit-content;
 
-    font-family: Poppins, sans-serif;
+    font-family: Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 13px;
     line-height: 19.5px;
     letter-spacing: 3px;
 
-    color: #fff;
+    color: $main-background-color;
     position: relative;
     display: block;
 
@@ -275,95 +201,105 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: #ff9c8e;
+      background-color: $pink;
       height: 2px;
       width: 100%;
       border-radius: 1px;
 
-      transition: transform 0.3s;
-      transform: scale(0);
+      transition: transform $effect-duration;
+      transform: scale($is-enabled-scale);
       transform-origin: left;
     }
 
     &:hover::after {
-      transform: scale(1);
+      transform: scale($is-active-scale);
     }
   }
 
   &__center {
-    @include onSmallDeskTop {
+    @include on-small-desktop {
       margin-top: 102px;
     }
 
     padding-inline: 21px;
 
-    @include onTablet {
+    @include on-tablet {
       padding-inline: 41px;
     }
 
-    @include onDeskTop {
+    @include on-desktop {
       padding-inline-start: 54px;
     }
 
-    @include onSmallDeskTop {
+    @include on-small-desktop {
       padding-inline-start: 54px;
     }
 
-    @include onDeskTop {
+    @include on-desktop {
       padding-inline-start: 80px;
     }
 
-    @include onTheDesign() {
+    @include on-the-design {
       padding-inline-start: 227px;
     }
 
-    @include onLargeScreens() {
+    @include on-large-screens {
       padding-inline-start: 707px;
     }
   }
 
   &__title {
     font-size: 52px;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    ;
+    font-family: Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
     letter-spacing: -2px;
     line-height: 62.4px;
-    color: #fff;
+    color: $main-background-color;
     margin: 0;
 
-    @include onTablet {
+    @include on-tablet {
       font-size: 64px;
       line-height: 68px;
     }
   }
 
   &__button {
-    font-family: 'Poppins';
+    font-family: Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
     font-size: 15px;
     line-height: 22.5px;
     margin-bottom: 48px;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     box-sizing: border-box;
-    display: block;
     width: 100%;
 
-    @include onTablet {
+    @include on-tablet {
       width: 264px;
       margin-bottom: 100px;
     }
 
     padding: 0 48px;
     border: 1px solid transparent;
-    color: #fff;
+    color: $main-background-color;
     background-color: $pink;
+    transition-duration: 0.3s;
+
+    &:hover {
+      transition-duration: 0.3s;
+      background-color: $button-hover-pink;
+    }
+
     height: 50px;
     border-radius: 64px;
   }
 
   &__elements {
-    color: #fff;
+    color: $main-background-color;
     display: flex;
     position: absolute;
 
@@ -372,21 +308,21 @@
     left: 20px;
     bottom: 24px;
 
-    @include onTablet {
+    @include on-tablet {
       bottom: 32px;
     }
 
-    @include onSmallDeskTop {
+    @include on-small-desktop {
       flex-direction: row;
     }
 
-    @include onSmallDeskTop {
+    @include on-small-desktop {
       left: 78px;
       bottom: 48px;
       z-index: 4;
     }
 
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(3px);
     flex-direction: column;
   }
 
@@ -395,12 +331,12 @@
     margin-top: 32px;
     margin-bottom: 72px;
 
-    @include onTablet {
+    @include on-tablet {
       margin-top: 24px;
       margin-bottom: 56px;
     }
 
-    @include onSmallDeskTop {
+    @include on-small-desktop {
       margin-top: 32px;
       margin-bottom: 83px;
     }

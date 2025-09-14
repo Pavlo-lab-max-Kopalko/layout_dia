@@ -5,18 +5,14 @@
 
   box-sizing: border-box;
   flex-direction: column;
-  // justify-content: space-between;
-  // padding: 20px;
   height: 100vh;
   text-transform: uppercase;
-  // overflow: hidden;
 
   &__top {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // padding: 18px 20px 48px 20px;
   }
 
   &__close {
@@ -33,10 +29,10 @@
   &__hire-us {
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff;
+    color: $main-background-color;
 
     padding-bottom: 8px;
-    border-bottom: 2px solid #ff9c8e;
+    border-bottom: 2px solid $pink;
     width: fit-content;
 
     display: block;
