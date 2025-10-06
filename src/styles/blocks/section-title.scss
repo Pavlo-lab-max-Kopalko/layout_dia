@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  src: url();
+}
+
 .section-title {
   font-weight: 600;
   font-size: 32px;
@@ -18,11 +23,12 @@
   }
 
   &-little {
+    font-family: Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    font-family: inherit;
     font-weight: 700;
     font-size: 13px;
-    line-height: 19.5px;
+    letter-spacing: 3px;
+    line-height: 100%;
     color: #c0cdd7;
     padding-bottom: 16px;
   }

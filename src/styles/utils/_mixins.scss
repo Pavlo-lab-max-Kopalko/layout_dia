@@ -36,9 +36,8 @@
   }
 }
 
-
 @mixin content-padding-inline() {
-  padding-inline: 20px 20px;
+  padding-inline: 20px;
 
   @include on-tablet {
     padding-inline: 41px;
@@ -53,14 +52,10 @@
   }
 
   @include on-the-design {
-    padding-inline: 227px;
-  }
-
-  @include on-large-screens {
-    padding-inline: 707px;
+    max-width: 1146px;
+    margin: auto;
   }
 }
-
 
 @mixin content-padding-bottom() {
   padding-bottom: 48px;

@@ -8,6 +8,10 @@
 
   @include content-padding-inline;
 
+  @include on-large-screens {
+    padding-inline: 707px;
+  }
+
   grid-auto-rows: min-content;
 
   @include on-tablet {
@@ -101,4 +105,8 @@
 
     border: 1px solid transparent;
   }
+}
+
+.wrapper__vision {
+  background-color: $main-background-color;
 }

@@ -3,6 +3,14 @@
 
   @include content-padding-inline;
 
+  @include on-the-design {
+    min-width: 1116px;
+  }
+
+  &__wrapper {
+    background-color: $background-color;
+  }
+
   &__nav {
     margin-bottom: 80px;
 

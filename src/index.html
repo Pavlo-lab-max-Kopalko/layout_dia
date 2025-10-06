@@ -37,7 +37,7 @@
             <a class="header__link" href="#expertise">Services</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="#service-agency">Testimonials</a>
+            <a class="header__link" href="#testimonials">Testimonials</a>
           </li>
           <li class="header__item">
             <a class="header__link" href="#contact-us">Contact Us</a>
@@ -123,7 +123,7 @@
               <a class="nav__link" href="#expertise">Services</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#service-agency">Testimonials</a>
+              <a class="nav__link" href="#testimonials">Testimonials</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#contact-us">Contact Us</a>
@@ -297,6 +297,7 @@
 
       <section class="what-people-say" id="testimonials">
         <h2 class="what-people-say__title section-title">What people say</h2>
+        <h3 class="section-title-little">Testimonials</h3>
 
         <div class="what-people-say__wraper">
           <div class="what-people-say__opinion what-people-say__opinion--1">
@@ -393,138 +394,133 @@
 
       </section>
 
-      <section class="vision" id="result">
-        <h2 class="section-title vision__title">Vision, Passion, Results</h2>
-        <p class="vision__describe">We are sure that first-rate job is possible only if all three components are united.</p>
+      <div class="wrapper__vision">
+        <section class="vision" id="result">
+          <h2 class="section-title vision__title">Vision, Passion, Results</h2>
+          <p class="vision__describe">We are sure that first-rate job is possible only if all three components are united.</p>
 
-        <a href="#send-message" class="vision__button">Apply</a>
-      </section>
-
-
-      <div class="single-level-section">
-        <section class="send-message" id="send-message">
-          <h2 class="section-title send-message__title">Send us a message</h2>
-
-          <form for="#" class="send-message__for">
-            <label class="send-message__label">
-              <input
-                type="email"
-                name="email"
-                class="send-message__input"
-                placeholder="Your email@"
-                autocomplete="true"
-              >
-            </label>
-
-            <div class="send-message__error" id="error-email">Enter a valid email</div>
-
-            <label class="send-message__label">
-              <input
-                type="name"
-                name="name"
-                class="send-message__input"
-                placeholder="Your name"
-                autocomplete="true"
-              >
-            </label>
-
-            <div class="send-message__error" id="error-name">Enter a valid name</div>
-
-            <label class="send-message__label">
-              <textarea
-                type="text"
-                name="message"
-                class="send-message__input--message send-message__input"
-                placeholder="Your message"
-                autocomplete="true"
-              ></textarea>
-            </label>
-
-            <div class="send-message__error" id="error-message">Enter a valid message</div>
-
-            <button
-              class="send-message__button"
-              type="submit"
-            >Send</button>
-          </form>
-        </section>
-
-        <section class="contact-us" id="contact-us">
-          <h2 class="section-title contact-us__title">
-            Contact us
-          </h2>
-
-          <div class="contact-us__contacts">
-            <div class="contact-us__describe">Call us</div>
-            <a
-              href="tel:654321987"
-              class="contact-us__info"
-              target="_blank"
-            >654 321 987</a>
-          </div>
-
-          <div class="contact-us__adress">
-            <div class="contact-us__describe">Visit us</div>
-            <a
-              href="https://www.google.com/maps"
-              class="contact-us__info"
-              target="_blank"
-            >2905 West Drive, Buffalo Grove</a>
-          </div>
-
-          <div class="contact-us__socials">
-            <div class="contact-us__describe contact-us__describe--icons">Our socials</div>
-
-            <div class="contact-us__socials-icons">
-              <a
-                href="https://www.facebook.com/DIA.Global.Agency/"
-                class="contact-us__icon contact-us__icon-facebook"
-                target="_blank">
-              </a>
-              <a
-                href="https://x.com/DefenseIntel?ref_src=twsrc%5Etfw"
-                class="contact-us__icon contact-us__icon-twitter"
-                target="_blank">
-              </a>
-              <a
-                href="https://www.instagram.com/diacreativeagency/"
-                class="contact-us__icon contact-us__icon-instagram"
-                target="_blank">
-              </a>
-            </div>
-
-          </div>
+          <a href="#send-message" class="vision__button">Apply</a>
         </section>
       </div>
-      <section class="bottom-menu">
-        <nav class="bottom-menu__nav">
-          <a href="#" class="bottom-menu__logo">
-            <img
-              src="/images/logo/air.png"
-              alt="Dia Logo"
-              class="bottom-menu__logo-img"
-            >
-          </a>
 
-          <ul class="bottom-menu__list">
-            <li class="bottom-menu__item">
-              <a class="bottom-menu__link" href="#who-we-are">About us</a>
-            </li>
-            <li class="bottom-menu__item">
-              <a class="bottom-menu__link" href="#expertise">Services</a>
-            </li>
-            <li class="bottom-menu__item">
-              <a class="bottom-menu__link" href="#service-agency">Testimonials</a>
-            </li>
-            <li class="bottom-menu__item">
-              <a class="bottom-menu__link" href="#contact-us">Contact Us</a>
-            </li>
-            <li class="bottom-menu__item">
-              <a class="bottom-menu__link" href="#send-message">Hire us</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
+      <div class="wrapper">
+        <div class="wrapper__background">
+          <div class="single-level-section">
+            <section class="send-message" id="send-message">
+              <h2 class="section-title send-message__title">Send us a message</h2>
+              <form for="#" class="send-message__for">
+                <label class="send-message__label">
+                  <input
+                    type="email"
+                    name="email"
+                    class="send-message__input"
+                    placeholder="Your email@"
+                    autocomplete="true"
+                  >
+                </label>
+                <div class="send-message__error" id="error-email">Enter a valid email</div>
+                <label class="send-message__label">
+                  <input
+                    type="name"
+                    name="name"
+                    class="send-message__input"
+                    placeholder="Your name"
+                    autocomplete="true"
+                  >
+                </label>
+                <div class="send-message__error" id="error-name">Enter a valid name</div>
+                <label class="send-message__label">
+                  <textarea
+                    type="text"
+                    name="message"
+                    class="send-message__input--message send-message__input"
+                    placeholder="Your message"
+                    autocomplete="true"
+                  ></textarea>
+                </label>
+                <div class="send-message__error" id="error-message">Enter a valid message</div>
+                <button
+                  class="send-message__button"
+                  type="submit"
+                >Send</button>
+              </form>
+            </section>
+            <section class="contact-us" id="contact-us">
+              <h2 class="section-title contact-us__title">
+                Contact us
+              </h2>
+              <div class="contact-us__contacts">
+                <div class="contact-us__describe">Call us</div>
+                <a
+                  href="tel:654321987"
+                  class="contact-us__info"
+                  target="_blank"
+                >654 321 987</a>
+              </div>
+              <div class="contact-us__adress">
+                <div class="contact-us__describe">Visit us</div>
+                <a
+                  href="https://www.google.com/maps"
+                  class="contact-us__info"
+                  target="_blank"
+                >2905 West Drive, Buffalo Grove</a>
+              </div>
+              <div class="contact-us__socials">
+                <div class="contact-us__describe contact-us__describe--icons">Our socials</div>
+                <div class="contact-us__socials-icons">
+                  <a
+                    href="https://www.facebook.com/DIA.Global.Agency/"
+                    class="contact-us__icon contact-us__icon-facebook"
+                    target="_blank">
+                  </a>
+                  <a
+                    href="https://x.com/DefenseIntel?ref_src=twsrc%5Etfw"
+                    class="contact-us__icon contact-us__icon-twitter"
+                    target="_blank">
+                  </a>
+                  <a
+                    href="https://www.instagram.com/diacreativeagency/"
+                    class="contact-us__icon contact-us__icon-instagram"
+                    target="_blank">
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-menu__wrapper">
+        <section class="bottom-menu">
+          <nav class="bottom-menu__nav">
+            <a href="#" class="bottom-menu__logo">
+              <img
+                src="/images/logo/air.png"
+                alt="Dia Logo"
+                class="bottom-menu__logo-img"
+              >
+            </a>
+
+            <ul class="bottom-menu__list">
+              <li class="bottom-menu__item">
+                <a class="bottom-menu__link" href="#who-we-are">About us</a>
+              </li>
+              <li class="bottom-menu__item">
+                <a class="bottom-menu__link" href="#expertise">Services</a>
+              </li>
+              <li class="bottom-menu__item">
+                <a class="bottom-menu__link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="bottom-menu__item">
+                <a class="bottom-menu__link" href="#contact-us">Contact Us</a>
+              </li>
+              <li class="bottom-menu__item">
+                <a class="bottom-menu__link" href="#send-message">Hire us</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
     </main>
 
     <script>
@@ -570,8 +566,6 @@
           hasErrors = true;
         }
 
-        console.log(hasErrors);
-
         if (hasErrors) {
           return;
         }
@@ -581,6 +575,10 @@
         document.querySelector('textarea[name="message"]').value = '';
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
+
+      const topBarEl = document.getElementsByClassName('top-bar')[0];
+
+      console.log(topBarEl.getBoundingClientRect());
     </script>
   </body>
 </html>

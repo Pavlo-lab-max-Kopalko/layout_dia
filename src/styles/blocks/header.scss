@@ -87,17 +87,7 @@
     }
 
     @include on-small-desktop {
-      max-width: 686px;
-      min-width: 502px;
-    }
-
-    @include on-the-design {
-      min-width: 687px;
-      max-width: 1166px;
-    }
-
-    @include on-large-screens {
-      min-width: 1167px;
+      width: 100vh;
     }
 
     height: 100%;
@@ -105,6 +95,7 @@
     margin-right: 0 !important;
     margin-left: 0 !important;
     overflow: hidden !important;
+    // these three directives !important here to override Swiper styles
   }
 
   &__arrow-button {
@@ -114,9 +105,11 @@
 
   &__left {
     margin-right: 16px;
+    cursor: pointer;
   }
 
   &__right {
+    cursor: pointer;
     margin-right: 24px;
   }
 
@@ -217,14 +210,14 @@
   }
 
   &__center {
-    @include on-small-desktop {
-      margin-top: 102px;
-    }
-
     padding-inline: 21px;
 
     @include on-tablet {
       padding-inline: 41px;
+    }
+
+    @include on-small-desktop {
+      margin-top: 102px;
     }
 
     @include on-desktop {

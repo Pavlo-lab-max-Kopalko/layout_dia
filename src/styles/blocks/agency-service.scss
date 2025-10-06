@@ -57,7 +57,7 @@
     @include on-small-desktop {
       grid-column: 7/13;
       gap: 20px;
-      max-width: 558px;
+      // max-width: 558px;
     }
   }
 
@@ -65,7 +65,7 @@
     transition: $effect-duration;
 
     &:hover {
-      transform: scale($hover-size);
+      transform: scale(1.1);
       transition: $effect-duration;
     }
 
