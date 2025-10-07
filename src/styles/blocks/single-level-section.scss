@@ -1,7 +1,8 @@
 .single-level-section {
   background-color: $background-color;
-
-  // border-radius: 24px !important;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+  overflow: hidden;
 
   @include on-small-desktop {
     display: grid;
@@ -10,7 +11,8 @@
   }
 
   @include on-the-design {
-    @include content-padding-inline();
+    max-width: 1146px;
+    margin: auto;
   }
 
   @include on-large-screens {
@@ -29,6 +31,10 @@
 .wrapper {
   border-top-left-radius: 24px !important;
   border-top-right-radius: 24px !important;
+  overflow: hidden;
+
+  background-color: $main-background-color;
+
 
   &__background {
     background-color: $background-color;
