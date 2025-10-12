@@ -50,11 +50,11 @@
 
     &-0 {
       background-position: unset;
-      background-image: url(/images/background-photo.png);
+      background-image: url(../images/background-photo.png);
     }
 
     &-1 {
-      background-image: url(/images/slider-photo1.png);
+      background-image: url(../images/slider-photo1.png);
 
       @include on-small-desktop {
         border-start-start-radius: 200px;
@@ -62,7 +62,7 @@
     }
 
     &-2 {
-      background-image: url(/images/slider-photo2.png);
+      background-image: url(../images/slider-photo2.png);
 
       @include on-small-desktop {
         border-start-start-radius: 200px;
@@ -70,7 +70,7 @@
     }
 
     &-3 {
-      background-image: url(/images/slider-photo3.png);
+      background-image: url(../images/slider-photo3.png);
 
       @include on-small-desktop {
         border-start-start-radius: 200px;

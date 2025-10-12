@@ -24,6 +24,13 @@
   }
 
   &__input {
+    &:-webkit-autofill {
+      border: 1px solid $background-color;
+      -webkit-text-fill-color: $second-main-color;
+      -webkit-box-shadow: 1000px $background-color inset;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+
     margin-bottom: 40px;
     height: 41px;
     padding: 0;

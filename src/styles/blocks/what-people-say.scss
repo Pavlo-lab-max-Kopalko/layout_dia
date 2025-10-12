@@ -138,6 +138,13 @@
   }
 
   &__photo {
+    transition: transform 0.2s;
+
+    &:hover {
+      transition: transform $effect-duration;
+      transform: scale($hover-size);
+    }
+
     border-radius: 50%;
     display: block;
     margin: auto;
